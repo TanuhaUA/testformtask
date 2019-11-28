@@ -7,6 +7,17 @@ body {
     text-align: center;
 }
 
+.header {
+    padding: 30px 0 0 60px;
+    margin: 0 0 30px 0;
+    text-align: left;
+    font-weight: 500;
+}
+
+.main {
+    position: relative;
+}
+
 .form {
     display: inline-block;
     position: relative;
@@ -45,6 +56,11 @@ body {
     border: 1px solid #cbd2d6;
 }
 
+.form__input:disabled {
+    background: none;
+    border: 0;
+}
+
 .form__button {
     padding: 15px 50px;
     margin-top: 20px;
@@ -54,4 +70,41 @@ body {
     border-radius: 3px;
     box-shadow: none;
     background: #cbd2d6;
+}
+
+.popup {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 500px;
+    height: 450px;
+    padding: 200px 50px;
+    background: #ff8e8d;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    line-height: 1;
+    background: none;
+    border: 2px solid white;
+    padding: 5px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup__close:focus {
+    outline: none;
+}
+
+.popup__text {
+    color: white;
+    font-size: 30px;
+    line-height: 1.2;
 }
